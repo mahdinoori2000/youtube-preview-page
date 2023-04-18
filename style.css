@@ -1,0 +1,122 @@
+/* ************** */
+/* SYSTEM   */
+/* ************ */
+/*--- 1-TYPOGRAPHY SYSTEM 
+-FONT-SIZES (PX)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 
+44 / 52 / 62 / 74 / 86 / 98
+
+--- 2- SPACING SYSTEM
+2 / 4 / 8 / 12 / 16 / 24 / 30 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+/* ************ */
+
+/* ************** */
+/* JENERAL CODE  */
+/* ************ */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: sans-serif;
+  line-height: 1;
+  color: #333;
+  background-color: #fcfcfc;
+}
+.reset-button {
+  background: none;
+  border: none;
+}
+/* NAVBAR SECTION  */
+.navbar {
+  height: 10vh;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  /* position: fixed; */
+  justify-content: space-between;
+}
+/* home  */
+.home {
+  display: flex;
+  gap: 20px;
+  margin-left: 25px;
+}
+.menu-icon {
+  width: 20px;
+  cursor: pointer;
+}
+.youtube-home-icon {
+  width: 115px;
+}
+/* search  */
+.search-box {
+  display: flex;
+  align-items: center;
+  margin-left: 90px;
+}
+.input-search {
+  height: 40px;
+  width: 550px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border: 0.5px solid #dbd6d6;
+  border-width: thin;
+  padding: 0px 0px 0px 15px;
+}
+.input-search:focus {
+  outline-color: rgb(78, 78, 253);
+  outline-width: thin;
+}
+.input-search::placeholder {
+  font-size: 16px;
+}
+.search-button {
+  height: 40px;
+  width: 70px;
+  border: 1px solid #dbd6d6;
+  border-left: 0px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: #f6f6f6;
+}
+.search-button:hover {
+  background: #dcdcdc;
+  cursor: pointer;
+}
+.search-icon {
+  width: 23px;
+}
+.microphone {
+  margin: 3px 0px 0px 20px;
+  cursor: pointer;
+}
+/* user  */
+.user {
+  margin-right: 40px;
+  display: flex;
+  gap: 30px;
+}
+.create-video {
+  width: 24px;
+  cursor: pointer;
+}
+.notification {
+  width: 24px;
+  cursor: pointer;
+}
+.user-logo {
+  width: 32px;
+  cursor: pointer;
+}
