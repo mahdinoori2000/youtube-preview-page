@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="youtube-icon.png" type="image/icon" />
     <title>Youtube Preview Page</title>
@@ -67,5 +73,90 @@
         </div>
       </nav>
     </header>
+    <main class="container">
+      <section class="video-play">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/mY4G9ujFxZE"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <h2 class="video-title">
+          Microverse | Become a Remote Software Developer
+        </h2>
+        <div class="video-info">
+          <img
+            class="video-logo"
+            src="images/mircroverse-logo.png"
+            alt="Microverse Logo"
+          />
+          <div class="channel-info">
+            <a href="#">Microverse</a>
+            <p>9.53K subscribers</p>
+          </div>
+          <button class="subscribe-btn">Subscribe</button>
+          <div class="video-like">
+            <button class="like-btn reset-button">
+              <img
+                class="like-logo"
+                src="images/like-icon.png"
+                alt="Like Logo"
+              />
+              554
+            </button>
+            <button class="dislike-btn reset-button">
+              <img
+                class="dislike-logo"
+                src="images/dislike-icon.png"
+                alt="Dislike Logo"
+              />
+            </button>
+            <button class="share-btn reset-button">
+              <img
+                class="share-logo"
+                src="images/share-icon.png"
+                alt="Share Logo"
+              />
+              Share
+            </button>
+            <button class="download-btn reset-button">
+              <img
+                class="download-logo"
+                src="images/download-icon.png"
+                alt="Download Logo"
+              />
+              Download
+            </button>
+            <button class="dots reset-button">...</button>
+          </div>
+        </div>
+      </section>
+      <aside class="sidebar">
+        <div class="video-menu">
+          <button class="reset-button">All</button>
+          <button class="reset-button">From Microverse</button>
+          <button class="reset-button">Computer Program</button>
+          <button class="reset-button" id="right-sign">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="right"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </button>
+        </div>
+      </aside>
+    </main>
   </body>
 </html>

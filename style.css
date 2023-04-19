@@ -25,14 +25,21 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1;
-  color: #333;
+  color: #111;
   background-color: #fcfcfc;
 }
 .reset-button {
   background: none;
   border: none;
+}
+button {
+  cursor: pointer;
+}
+main {
+  display: flex;
+  gap: 30px;
 }
 /* NAVBAR SECTION  */
 .navbar {
@@ -42,6 +49,7 @@ body {
   align-items: center;
   /* position: fixed; */
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 /* home  */
 .home {
@@ -72,7 +80,7 @@ body {
   padding: 0px 0px 0px 15px;
 }
 .input-search:focus {
-  outline-color: rgb(78, 78, 253);
+  outline-color: #4e4efd;
   outline-width: thin;
 }
 .input-search::placeholder {
@@ -119,4 +127,142 @@ body {
 .user-logo {
   width: 32px;
   cursor: pointer;
+}
+
+/* MAIN SECTION  */
+.container {
+  width: 1275px;
+  margin: auto;
+}
+.video-play iframe {
+  width: 850px;
+  height: 478px;
+  margin-bottom: 15px;
+}
+.video-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #111;
+  margin-bottom: 10px;
+}
+.video-logo {
+  width: 40px;
+  border-radius: 50%;
+}
+.video-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 200px;
+}
+.channel-info a {
+  color: #111;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+.channel-info a:hover {
+  text-decoration: underline;
+}
+.channel-info p {
+  color: #6b6a6a;
+  font-size: 12px;
+  margin-top: 6px;
+}
+.subscribe-btn {
+  color: #fff;
+  background-color: #111;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 14px;
+  border-radius: 50px;
+  border: none;
+}
+
+.video-like {
+  margin-left: 140px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.share-btn,
+.like-btn,
+.dislike-btn,
+.download-btn,
+.dots {
+  height: 35px;
+  background-color: #f1f3f5;
+  padding: 0px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-weight: 600;
+  color: #555;
+}
+.share-btn:hover,
+.like-btn:hover,
+.dislike-btn:hover,
+.download-btn:hover,
+.dots:hover {
+  background-color: #ced4da;
+}
+.like-btn {
+  font-weight: 600;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+.like-logo {
+  width: 23px;
+}
+.dislike-btn {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  margin: 0px 0px 0px -20px;
+  border-left: 1px solid rgb(175, 175, 175);
+}
+.dislike-logo {
+  width: 28px;
+}
+.share-btn,
+.download-btn,
+.dots {
+  border-radius: 50px;
+}
+.download-logo {
+  width: 24px;
+}
+
+/* SIDE BAR  */
+.sidebar {
+  margin-top: 10px;
+}
+.video-menu {
+  display: flex;
+  gap: 10px;
+}
+.video-menu button {
+  font-size: 14px;
+  padding: 7px 12px;
+  background-color: #dee2e6;
+  border-radius: 10px;
+}
+.video-menu button:hover {
+  background-color: #ced4da;
+}
+#right-sign {
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 16px;
+}
+#right-sign:hover {
+  background-color: #dee2e6;
+  border-radius: 1000px;
+}
+.right {
+  padding: 0;
+  color: #111;
+  width: 20px;
 }
